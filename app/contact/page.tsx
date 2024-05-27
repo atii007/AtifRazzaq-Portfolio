@@ -16,7 +16,7 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const serviceId = `${process.env.NEXT_PUBLIC_EMAILJS_USER_ID}`;
+  const [emailSubmitted, setEmailSubmitted] = React.useState(false);
 
   const sendEmail = (values: any) => {
     const templateParams = {
@@ -36,6 +36,12 @@ const Contact = () => {
       .then(
         () => {
           console.log("Success!");
+          setEmailSubmitted(true);
+          formik.resetForm();
+
+          setTimeout(() => {
+            setEmailSubmitted(false);
+          }, 2000);
         },
         (error) => {
           console.log("Failed . . . ", error);
@@ -184,6 +190,9 @@ const Contact = () => {
               <FiSend />
             </span>
           </button>
+          {emailSubmitted && (
+            <p className="success_message">Email sent successfully!</p>
+          )}
         </form>
       </div>
     </section>

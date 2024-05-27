@@ -102,7 +102,12 @@
   font-weight: var(--weight-400);
   padding: 10px;
 }
-
+.success_message {
+  color: #22c55e;
+  font-size: var(--body-font);
+  margin-top: 0.5rem;
+  text-align: center;
+}
 @media screen and (max-width: 468px) {
   .contact_container {
     grid-template-columns: none;

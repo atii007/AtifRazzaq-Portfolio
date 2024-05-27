@@ -13,6 +13,10 @@
   line-height: 1.6;
 }
 
+.contact_info {
+  margin-top: 20px;
+}
+
 .contact_description,
 .contact_info .info_item {
   margin-bottom: 20px;

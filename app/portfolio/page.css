@@ -116,4 +116,25 @@
   .projectCards_Section {
     grid-template-columns: repeat(1, 1fr);
   }
+  .projectTag_Button {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .button {
+    margin-inline: 2px;
+  }
+  .details_container {
+    height: fit-content;
+  }
+  .projectCard_Container {
+    height: 14rem;
+  }
+  .details_heading {
+    font-size: var(--large-font-size);
+  }
+  .details_description {
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-400);
+  }
 }

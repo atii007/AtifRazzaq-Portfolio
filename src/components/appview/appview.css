@@ -67,8 +67,8 @@
     height: 100vh;
   }
   .home_img {
-    height: 45%;
-    width: 80%;
+    height: 30%;
+    width: 50%;
     border-radius: 50%;
   }
   .home_data {
@@ -77,11 +77,12 @@
   .home_title {
     text-align: left;
     padding-left: 0px;
+    font-size: var(--h2-font-size);
+    text-align: center;
   }
   .home_title span {
     display: block;
     color: var(--first-color);
-    width: 385px;
   }
   .color_block {
     display: none;

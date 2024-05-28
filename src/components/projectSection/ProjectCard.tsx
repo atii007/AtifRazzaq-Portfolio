@@ -17,7 +17,7 @@ const ProjectCard = ({
   previewUrl,
 }: ProjectCardProps) => {
   return (
-    <div style={{ width: "380px" }}>
+    <div >
       <div
         className="projectCard_Container group"
         style={{

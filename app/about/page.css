@@ -177,8 +177,36 @@
     align-items: flex-start;
   }
   .skills_container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     row-gap: 35px;
+  }
+  .info_list,
+  .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info_list,
+  .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stats_no {
+    font-size: var(--h1-font-size);
+  }
+
+  .stats_title {
+    font-size: var(--h3-font-size);
+    padding-left: 95px;
+  }
+
+  .stats_title::before {
+    left: 5px;
+    width: 65px;
+  }
+  .about_info {
+    padding-inline: 35px;
+  }
+  .info_list .info_title {
+    font-size: var(--large-font-size);
   }
 }

@@ -112,7 +112,14 @@
   margin-top: 0.5rem;
   text-align: center;
 }
+
 @media screen and (max-width: 468px) {
+  .contact_data {
+    padding-inline: 35px;
+  }
+  .section_title {
+    font-size: var(--h2-font-size);
+  }
   .contact_container {
     grid-template-columns: none;
   }

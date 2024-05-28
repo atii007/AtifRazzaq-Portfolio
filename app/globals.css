@@ -175,5 +175,6 @@ img {
   }
   .section_title {
     font-size: var(--h1-font-size);
+    margin-bottom: 50px;
   }
 }
